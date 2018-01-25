@@ -36,4 +36,17 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
+    
+    /**
+     * 25/01/2017 Registrazione con validazione email
+     *
+     */
+    public function authenticated(Request $request, $user)
+    {
+        if (!$user->b_verified) {
+            auth()->logout();
+            return back()->with('warning', __('attivazione.nonconfermata'));
+        }
+        return redirect()->intended($this->redirectPath());
+    }
 }

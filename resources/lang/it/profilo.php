@@ -14,7 +14,11 @@ return [
     */
 
     'profilo'   => 'Profilo',
-    'ex1'       => 'Per usufruire del servizio è necessario compilare le informazioni sul tuo profilo. Questo ti permetterà di velocizzare le operazioni di check-in e check-out presso la nostra sede.'
+    'ex1'       => 'Per usufruire del servizio è necessario compilare le informazioni sul tuo profilo. Questo ti permetterà di velocizzare le operazioni di check-in e check-out presso la nostra sede.',
+    'attivazione.verificata' => 'Your e-mail is verified. You can now login.',
+    'attivazione.giaverificata' => 'Your e-mail is already verified. You can now login.',
+    'attivazione.nonidentificata' => "Sorry your email cannot be identified.",
+    'attivazione.nonconfermata' => 'You need to confirm your account. We have sent you an activation code, please check your email.',
+    'attivazione.confermaemailinviata' => 'We sent you an activation code. Check your email and click on the link to verify.',
     
-
 ];
