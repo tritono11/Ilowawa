@@ -13,6 +13,8 @@
         <script type="text/javascript" src="{{ asset('js/aframe-components/click-listener.js') }}"></script>
         <script type="text/javascript" src="{{ asset('js/aframe-components/spawner.js') }}"></script>
         <script type="text/javascript" src="{{ asset('js/aframe-components/bike.js') }}"></script>
+    
+        <script src="https://unpkg.com/aframe-seek-position-component/dist/aframe-seek-position-component.min.js"></script>
     </head>
     
     <style>
@@ -44,15 +46,15 @@
             </a-entity>
             
             
-            <a-entity gltf-model="#mymodel" position="0 0 -10" scale="4 4 4"></a-entity>
-            <a-entity gltf-model="#mymodel" position="8 0 -10" scale="4 4 4"></a-entity>
-            <a-entity gltf-model="#mymodel" position="-8 0 -10" scale="4 4 4"></a-entity>
-            <a-entity gltf-model="#mymodel" position="16 0 -10" scale="4 4 4"></a-entity>
-            <a-entity gltf-model="#mymodel" position="-16 0 -10" scale="4 4 4"></a-entity>
-            <a-entity gltf-model="#mymodel" position="32 0 -10" scale="4 4 4"></a-entity>
-            <a-entity gltf-model="#mymodel" position="-32 0 -10" scale="4 4 4"></a-entity>
-            <a-entity gltf-model="#strada" position="-8  0.1 -1" rotation="0 90 0"></a-entity>
-            <!--<a-plane position="0 0 -4" rotation="-90 0 0" width="2000" height="2000" color="#7BC8A4" static-body ></a-plane>-->
+            <a-entity gltf-model="#mymodel" position="0 0 -10" scale="4 4 4" static-body></a-entity>
+            <a-entity gltf-model="#mymodel" position="8 0 -10" scale="4 4 4" static-body></a-entity>
+            <a-entity gltf-model="#mymodel" position="-8 0 -10" scale="4 4 4" static-body></a-entity>
+            <a-entity gltf-model="#mymodel" position="16 0 -10" scale="4 4 4" static-body></a-entity>
+            <a-entity gltf-model="#mymodel" position="-16 0 -10" scale="4 4 4" static-body></a-entity>
+            <a-entity gltf-model="#mymodel" position="32 0 -10" scale="4 4 4" static-body></a-entity>
+            <a-entity gltf-model="#mymodel" position="-32 0 -10" scale="4 4 4" static-body></a-entity>
+            <a-entity gltf-model="#strada" position="-8  0.1 -1" rotation="0 90 0" static-body></a-entity>
+            <a-plane position="0 0 -4" rotation="-90 0 0" width="2000" height="2000" color="#7BC8A4" static-body ></a-plane>
             <!-- Env -->
             <a-entity environment="preset: forest"></a-entity>
             <a-sound src="src: url({{ asset('/js/aframe-components/sound/forest.mp3') }})" autoplay="true" position="0 2 5" loop="true"></a-sound>

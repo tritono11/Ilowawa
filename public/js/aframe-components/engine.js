@@ -40,16 +40,9 @@ AFRAME.registerComponent('engine', {
   },
   tick: function (time, timeDelta) {
     //if (currentPosition.y > 6) { return; }
-    
-    //this.el.object3D.matrixAutoUpdate = false;
-    var newPos = new THREE.Vector3( this.el.object3D.position.x + this.directionVec3.x * this.data.speed,
-                                    this.el.object3D.position.y + this.directionVec3.y * this.data.speed, 
-                                    this.el.object3D.position.z + this.directionVec3.z * this.data.speed );
-    //this.el.object3D.position.x = this.el.object3D.position.x + this.directionVec3.x * this.data.speed;
-    //this.el.object3D.position.y = this.el.object3D.position.y + this.directionVec3.y * this.data.speed;
-    //this.el.object3D.position.z = this.el.object3D.position.z + this.directionVec3.z * this.data.speed;
-    this.el.object3D.position.copy(newPos);
-    
+    this.el.object3D.position.set(this.el.object3D.position.x + this.directionVec3.x * this.data.speed,
+                            this.el.object3D.position.y + this.directionVec3.y * this.data.speed, 
+                            this.el.object3D.position.z + this.directionVec3.z * this.data.speed);
     
   },
   onKeyDown: function (event) {
