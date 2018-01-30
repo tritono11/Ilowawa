@@ -28,9 +28,9 @@ AFRAME.registerComponent('bike', {
         var elGift = document.createElement('a-sphere');
         //elGift.object3D.matrix.setPosition(el.object3D.matrixWorld.getPosition());
         //console.log(elGift.object3D.position);
-        //elGift.setAttribute('position', {x:-8, y:0.5, z:-1});
-        elGift.object3D.position.copy(this.el.position);
-        elGift.object3D.updateMatrix();
+        elGift.setAttribute('position', {x:-8, y:0.5, z:-1});
+        //elGift.object3D.position.copy(this.el.position);
+        //elGift.object3D.updateMatrix();
         elGift.setAttribute('scale', {x:0.1, y:0.1, z:0.1});
         elGift.setAttribute('gift', {speed:0.05});
         this.el.sceneEl.appendChild(elGift);
