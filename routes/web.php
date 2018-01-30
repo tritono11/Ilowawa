@@ -20,12 +20,12 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 // PUBLIC ROUTES
-Route::get('/ar', function () {
-    return view('public.ar');
-})->name('ar');
-Route::get('/aframe', function () {
-    return view('public.aframe');
-})->name('aframe');
+//Route::get('/ar', function () {
+//    return view('public.ar');
+//})->name('ar');
+//Route::get('/aframe', function () {
+//    return view('public.aframe');
+//})->name('aframe');
 Route::get('/test', function () {
     return view('public.test');
 })->name('test');

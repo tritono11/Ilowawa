@@ -71,9 +71,6 @@
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
                     @else
-                        <a href="{{ route('ar') }}">AR.js</a>
-                        <a href="{{ route('aframe') }}">AFRAME.js</a>
-                        <a href="{{ route('test') }}">TEST-CONSTRAINT.js</a>
                         <a href="{{ route('login') }}">Login</a>
                         <a href="{{ route('register') }}">Register</a>
                     @endauth
