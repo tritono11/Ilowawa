@@ -42,8 +42,6 @@
                 <a-entity id="camera-1" position="6 0 -6" rotation="-45 135 0" camera="userHeight: 10.0" look-controls ></a-entity>
                 <!--<a-sphere scale="0.3 0.3 0.3" position="0 0 0 " gift="speed:0.1"></a-sphere>-->
             </a-entity>
-            
-            
             <a-entity gltf-model="#mymodel" position="0 0 -10" scale="4 4 4"></a-entity>
             <a-entity gltf-model="#mymodel" position="8 0 -10" scale="4 4 4"></a-entity>
             <a-entity gltf-model="#mymodel" position="-8 0 -10" scale="4 4 4"></a-entity>
